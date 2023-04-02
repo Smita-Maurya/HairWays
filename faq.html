@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairWay - Harness the value</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body{
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container h1{
+  color: #fff;
+  text-align: center;
+}
+
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <details>
+        <summary>How do I create an account?</summary>
+        <div>
+        Go to Sign in Page
+        </div>
+      </details>
+      <hr>
+      <details>
+        <summary>How can I place order?</summary>
+        <div>
+          Forms have been included in each section, allowing you to conveniently place your order.
+        </div>
+      </details>
+      </div>
+      <hr>
+      <details>
+        <summary>Where to track my package?</summary>
+        <div>
+       Go to supply chain section -> WareHouse and Transportation -> Press the track it button
+        </div> 
+      </details>
+      <div>
+      <hr>
+      <details>
+        <summary>How many days in advance do I need to make my booking?</summary>
+        <div>
+       Atleast 1 Week
+        </div>
+      </details>
+      </div>
+      <hr>
+      <details>
+        <summary>What do I need to do after scheduling my pickup?</summary>
+        <div>
+       Make sure that you have confirm the pickup time, correct address, and have a packing slip with you.
+        </div>
+      </details>
+      </div>
+    <hr>
+    <details>
+      <summary>If you do not find the answer to your questions then drop here.</summary>
+      <div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScEyOIBSwryeKW1Tr_UoNZGCKjWumJwMOwEIWLUICsV9_UCpQ/viewform?usp=pp_url">Ask Here:-</a>
+      </div>
+    </details>
+    </div>
+</body>
+</html>
